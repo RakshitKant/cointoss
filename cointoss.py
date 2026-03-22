@@ -20,11 +20,12 @@ if(userchoice=="y"):
          tails=num-heads
          print(heads,"number  of heads")
          print(tails,"number of tails")
-         break
         except ValueError:
             print('invalid choice')
     
 elif(userchoice=="n"):
     print("bye thanks")
+    break
 else:
     print("enter a valid choice")
+    
