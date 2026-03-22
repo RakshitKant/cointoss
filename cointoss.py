@@ -20,6 +20,7 @@ if(userchoice=="y"):
          tails=num-heads
          print(heads,"number  of heads")
          print(tails,"number of tails")
+         break
         except ValueError:
             print('invalid choice')
     
