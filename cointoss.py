@@ -10,10 +10,12 @@ def cointoss(num):
             print("tails")
             
     return heads
-userchoice=input("do you want to toss a coin y/n?")
+
 heads,tails=0,0
-if(userchoice=="y"):
-    while True:
+while True:
+    userchoice=input("do you want to toss a coin y/n?")
+    if(userchoice=="y"):
+    
         try:
          num=int(input("enter the number"))
          heads=cointoss(num)
@@ -23,9 +25,9 @@ if(userchoice=="y"):
         except ValueError:
             print('invalid choice')
     
-elif(userchoice=="n"):
-    print("bye thanks")
-    break
-else:
-    print("enter a valid choice")
+    elif(userchoice=="n"):
+        print("bye thanks")
+        break
+    else:
+        print("enter a valid choice")
     
